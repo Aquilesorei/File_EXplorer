@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/About.svg</file>
+        <file>Icons/Access.png</file>
+        <file>Icons/Analyse.png</file>
+        <file>Icons/Audio.png</file>
+        <file>Icons/Cancel.svg</file>
+        <file>Icons/Close.svg</file>
+        <file>Icons/Compressed.png</file>
+        <file>Icons/Copy.svg</file>
+        <file>Icons/Corbeille_Pleine.png</file>
+        <file>Icons/Corbeille_Vide.png</file>
+        <file>Icons/Cut.svg</file>
+        <file>Icons/delete.svg</file>
+        <file>Icons/Documents.png</file>
+        <file>Icons/Download.png</file>
+        <file>Icons/Encrypted.png</file>
+        <file>Icons/Favourite.ico</file>
+        <file>Icons/Find.svg</file>
+        <file>Icons/FTP.png</file>
+        <file>Icons/Image.png</file>
+        <file>Icons/MainStorage.png</file>
+        <file>Icons/Menu.png</file>
+        <file>Icons/Myriad.png</file>
+        <file>Icons/New.svg</file>
+        <file>Icons/NewFiles.png</file>
+        <file>Icons/Options.jpg</file>
+        <file>Icons/Paste.svg</file>
+        <file>Icons/qt_logo_black_rgb.svg</file>
+        <file>Icons/refresh.png</file>
+        <file>Icons/Rename.png</file>
+        <file>Icons/Settings.svg</file>
+        <file>Icons/Share.png</file>
+        <file>Icons/Softwares.jpg</file>
+        <file>Icons/Sort.svg</file>
+        <file>Icons/USB.png</file>
+        <file>Icons/USB3.png</file>
+        <file>Icons/Videos.png</file>
+        <file>Icons/View.ico</file>
+        <file>Icons/view-details-512.ico</file>
+    </qresource>
+</RCC>

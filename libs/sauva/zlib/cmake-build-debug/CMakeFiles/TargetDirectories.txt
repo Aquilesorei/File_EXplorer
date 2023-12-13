@@ -1,0 +1,13 @@
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/zlib.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/zlibstatic.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/example.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/minigzip.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/example64.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/minigzip64.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/test.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/install.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/install/local.dir
+/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug/CMakeFiles/install/strip.dir

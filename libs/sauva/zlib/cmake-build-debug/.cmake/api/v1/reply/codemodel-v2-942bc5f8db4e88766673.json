@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-772837d12dc0687a6e3d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.4.4"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "zlib",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example-Debug-0b31324bc564b97a92ba.json",
+					"name" : "example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example64::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example64-Debug-2f651723cf8f8bf28293.json",
+					"name" : "example64",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minigzip::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minigzip-Debug-02e4e7e3ee7e19728591.json",
+					"name" : "minigzip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minigzip64::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minigzip64-Debug-72a0d867ab13bf6712aa.json",
+					"name" : "minigzip64",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zlib-Debug-f10e2bcf8dcbce4db4ec.json",
+					"name" : "zlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zlibstatic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zlibstatic-Debug-484e781f260b8d1d6a3a.json",
+					"name" : "zlibstatic",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib/cmake-build-debug",
+		"source" : "/home/aquiles/Documents/QTCreator/File_EXplorer/libs/sauva/zlib"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
