@@ -48,7 +48,7 @@ tabWidget::~tabWidget() {
 void tabWidget::addNewTab(const QString& path) {
     int count = tabs->count();
 
-    auto *b = new Achille;
+    auto *b = new CentralWidget;
 
     b->loadDir(path,true,true);
     QString name = b->currentDirName();
@@ -71,25 +71,25 @@ void tabWidget::addNewTab() {
     if (tabs->count()==1) {
         addNewTab();
     }
-    auto *b = dynamic_cast<Achille *>(tabs->widget(index));
+    auto *b = dynamic_cast<CentralWidget *>(tabs->widget(index));
     b->stopRefresh();
     delete b;
 }
 
-Achille *tabWidget::currentWidget() {
-    auto *w = dynamic_cast<Achille *>(tabs->currentWidget());
+CentralWidget *tabWidget::currentWidget() {
+    auto *w = dynamic_cast<CentralWidget *>(tabs->currentWidget());
     return w;
 }
 
 void tabWidget::updateTabName() {
-    Achille *w = currentWidget();
+    CentralWidget *w = currentWidget();
     tabs->setTabText(tabs->currentIndex(),w->currentDirName());
 }
 
-QVector<Achille *> tabWidget::allWidgets() {
-    QVector<Achille *> widgets;
+QVector<CentralWidget *> tabWidget::allWidgets() {
+    QVector<CentralWidget *> widgets;
     for (int i = 0; i<tabs->count(); i++) {
-        auto current = dynamic_cast<Achille *>(tabs->widget(i));
+        auto current = dynamic_cast<CentralWidget *>(tabs->widget(i));
         widgets.push_back(current);
     }
     return widgets;
@@ -102,7 +102,7 @@ void tabWidget::onTabsChanged() {
 }
 
 void tabWidget::onTabClosed(int index) {
-    auto b = dynamic_cast<Achille *>(tabs->widget(index));
+    auto b = dynamic_cast<CentralWidget *>(tabs->widget(index));
     b->stopRefresh();
     delete b;
 }

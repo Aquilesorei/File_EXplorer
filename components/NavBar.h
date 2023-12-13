@@ -3,7 +3,7 @@
 #include <QToolBar>
 #include <QToolButton>
 
-#include "Achille.h"
+#include "CentralWidget.h"
 class Achille;
 class NavBar : public QToolBar {
     Q_OBJECT

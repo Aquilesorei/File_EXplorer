@@ -1,10 +1,10 @@
 #include "backD.h"
-#include "../../tabwidget.h"
+#include "../../components/tabwidget.h"
 #include <QtConcurrent>
 #include <QFuture>
 #include <QStorageInfo>
 
-backD::backD(Achille *parent):QDialog(parent)
+backD::backD(CentralWidget *parent): QDialog(parent)
 {
 
 
@@ -18,10 +18,10 @@ backD::backD(Achille *parent):QDialog(parent)
     // QFuture<qlonglong> future = QtConcurrent::run(&analysa);//work !
    // QFuture<qlonglong> future = QtConcurrent::run(this,&backD::analysa);
  //   qlonglong size= future.result();
-     QString path ="C:\\Users\\ZONGO Achille\\Documents\\QtCreator\\File_EXplorer";//QDir::toNativeSeparators(currentPath);
-   // QStringList arguments { "C:\\Users\\ZONGO Achille\\Documents\\QtCreator\\File_EXplorer\\PyGetFolderSize.py",path};
+     QString path ="C:\\Users\\ZONGO CentralWidget\\Documents\\QtCreator\\File_EXplorer";//QDir::toNativeSeparators(currentPath);
+   // QStringList arguments { "C:\\Users\\ZONGO CentralWidget\\Documents\\QtCreator\\File_EXplorer\\PyGetFolderSize.py",path};
    process = new QProcess(this);
-   const QString program = QDir::toNativeSeparators("C:/Users/ZONGO Achille/AppData/Local/Programs/Python/Python310/python.exe");
+   const QString program = QDir::toNativeSeparators("C:/Users/ZONGO CentralWidget/AppData/Local/Programs/Python/Python310/python.exe");
    /*process->setProgram(program);
     process->start();
     qDebug() <<process->processId();
@@ -148,7 +148,7 @@ qlonglong  backD::analysa()
 //QtConcurrent::run<backD *, long long (backD::*)()>
 void backD::comm()
 {
-    const QString program = QDir::toNativeSeparators("C:/Users/ZONGO Achille/AppData/Local/Programs/Python/Python310/python.exe");
+    const QString program = QDir::toNativeSeparators("C:/Users/ZONGO CentralWidget/AppData/Local/Programs/Python/Python310/python.exe");
     qDebug()<<"le renard passe passe";
 
 

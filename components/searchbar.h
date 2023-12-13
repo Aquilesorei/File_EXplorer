@@ -8,7 +8,7 @@
 
 
 class QLineEdit;
-class Achille;
+class CentralWidget;
 
 class SearchBar : public QWidget {
     Q_OBJECT

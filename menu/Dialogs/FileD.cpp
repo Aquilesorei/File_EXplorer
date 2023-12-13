@@ -1,7 +1,7 @@
 #include "FileD.h"
-#include "../../tabwidget.h"
+#include "../../components/tabwidget.h"
 
-FileD::FileD(Achille *parent):QDialog(parent)
+FileD::FileD(CentralWidget *parent): QDialog(parent)
 {
     QString currentPath = tabWidget::currentWidget()->fsCurrentPath();
     QString currentName = tabWidget::currentWidget()->currentItemName();

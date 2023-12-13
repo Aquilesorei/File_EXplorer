@@ -1,7 +1,7 @@
 
 #include "leftView.h"
 
-#include "../tabwidget.h"
+#include "../components/tabwidget.h"
 
 #include <QAction>
 leftView::leftView(QWidget *parent):QWidget(parent)

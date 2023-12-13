@@ -5,8 +5,8 @@
 #include <QAction>
 #include <QImage>
 #include <QClipboard>
-#include "../tabwidget.h"
-#include "../Actions.h"
+#include "../components/tabwidget.h"
+#include "../components/Actions.h"
 #include "../menu/BackgroundContextMenu.h"
 #include "../menu/FileContextMenu.h"
 #include "../menu/Dialogs/SortD.h"

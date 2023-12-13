@@ -1,47 +1,74 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'Analysa.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.3.1)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../Analysa.h"
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+
+#if __has_include(<QtCore/qtmochelpers.h>)
+#include <QtCore/qtmochelpers.h>
+#else
+QT_BEGIN_MOC_NAMESPACE
+#endif
+
+
+#include <memory>
+
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'Analysa.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.3.1. It"
+#error "This file was generated using the moc from 6.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_Analysa_t {
-    const uint offsetsAndSize[6];
-    char stringdata0[18];
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
+
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSAnalysaENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSAnalysaENDCLASS = QtMocHelpers::stringData(
+    "Analysa",
+    "progress",
+    ""
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASSAnalysaENDCLASS_t {
+    uint offsetsAndSizes[6];
+    char stringdata0[8];
+    char stringdata1[9];
+    char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_Analysa_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_Analysa_t qt_meta_stringdata_Analysa = {
+    uint(sizeof(qt_meta_stringdata_CLASSAnalysaENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSAnalysaENDCLASS_t qt_meta_stringdata_CLASSAnalysaENDCLASS = {
     {
-QT_MOC_LITERAL(0, 7), // "Analysa"
-QT_MOC_LITERAL(8, 8), // "progress"
-QT_MOC_LITERAL(17, 0) // ""
-
+        QT_MOC_LITERAL(0, 7),  // "Analysa"
+        QT_MOC_LITERAL(8, 8),  // "progress"
+        QT_MOC_LITERAL(17, 0)   // ""
     },
-    "Analysa\0progress\0"
+    "Analysa",
+    "progress",
+    ""
 };
 #undef QT_MOC_LITERAL
+#endif // !QT_MOC_HAS_STRING_DATA
+} // unnamed namespace
 
-static const uint qt_meta_data_Analysa[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSAnalysaENDCLASS[] = {
 
  // content:
-      10,       // revision
+      11,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -60,6 +87,22 @@ static const uint qt_meta_data_Analysa[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject Analysa::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_meta_stringdata_CLASSAnalysaENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSAnalysaENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSAnalysaENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<Analysa, std::true_type>,
+        // method 'progress'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
+    >,
+    nullptr
+} };
+
 void Analysa::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -73,29 +116,13 @@ void Analysa::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (Analysa::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Analysa::progress)) {
+            if (_t _q_method = &Analysa::progress; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
     }
 }
-
-const QMetaObject Analysa::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_Analysa.offsetsAndSize,
-    qt_meta_data_Analysa,
-    qt_static_metacall,
-    nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_Analysa_t
-, QtPrivate::TypeAndForceComplete<Analysa, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>
-
-
-
->,
-    nullptr
-} };
-
 
 const QMetaObject *Analysa::metaObject() const
 {
@@ -105,7 +132,7 @@ const QMetaObject *Analysa::metaObject() const
 void *Analysa::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_Analysa.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSAnalysaENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
@@ -134,4 +161,3 @@ void Analysa::progress(int _t1)
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

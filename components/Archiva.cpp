@@ -1,6 +1,6 @@
 #include "Archiva.h"
 #include "qdir.h"
-#include "libs/quazip/JlCompress.h"
+#include "../libs/quazip/JlCompress.h"
 Archiva::Archiva(): QWidget()
 {
 

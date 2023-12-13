@@ -515,3 +515,71 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/aquiles/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/aquiles/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/home/aquiles/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/aquiles/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/aquiles/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
+      - "CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/aquiles/CLionProjects/File_EXplorer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WAoktP"
+      binary: "/home/aquiles/CLionProjects/File_EXplorer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WAoktP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6;/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /home/aquiles/CLionProjects/File_EXplorer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WAoktP
+        
+        Run Build Command(s):/home/aquiles/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -v cmTC_9098d && [1/2] /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fdiagnostics-color=always -o CMakeFiles/cmTC_9098d.dir/src.c.o -c /home/aquiles/CLionProjects/File_EXplorer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WAoktP/src.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_9098d.dir/src.c.o -o cmTC_9098d   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/aquiles/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/aquiles/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/home/aquiles/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:40 (include)"
+      - "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6/Qt6Config.cmake:157 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/home/aquiles/CLionProjects/File_EXplorer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Z0CPae"
+      binary: "/home/aquiles/CLionProjects/File_EXplorer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Z0CPae"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6;/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: /home/aquiles/CLionProjects/File_EXplorer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Z0CPae
+        
+        Run Build Command(s):/home/aquiles/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -v cmTC_364b1 && [1/2] /usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles/cmTC_364b1.dir/src.cxx.o -c /home/aquiles/CLionProjects/File_EXplorer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Z0CPae/src.cxx
+        [2/2] : && /usr/bin/c++   CMakeFiles/cmTC_364b1.dir/src.cxx.o -o cmTC_364b1   && :
+        
+      exitCode: 0
+...

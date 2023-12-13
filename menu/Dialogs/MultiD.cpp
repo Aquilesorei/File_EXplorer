@@ -1,6 +1,6 @@
 #include "MultiD.h"
-#include "../../tabwidget.h"
-MultiD::MultiD(Achille *parent):QDialog(parent)
+#include "../../components/tabwidget.h"
+MultiD::MultiD(CentralWidget *parent): QDialog(parent)
 {
     QString currentPath = tabWidget::currentWidget()->fsCurrentPath();
     QString currentName = tabWidget::currentWidget()->currentItemName();

@@ -1,6 +1,6 @@
 #include "SortD.h"
-#include "../../tabwidget.h"
-SortD::SortD(Achille *parent):QDialog(parent)
+#include "../../components/tabwidget.h"
+SortD::SortD(CentralWidget *parent): QDialog(parent)
 {
     layout = new QVBoxLayout;
     QLabel *label = new QLabel("Sort by");

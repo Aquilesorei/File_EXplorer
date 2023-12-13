@@ -1,5 +1,5 @@
 #include "Dialog.h"
-#include "Achille.h"
+#include "CentralWidget.h"
 Dialog::Dialog()
 {
     toolBar = new QToolBar;

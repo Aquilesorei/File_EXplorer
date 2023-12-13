@@ -7,12 +7,12 @@
 #include <QLabel>
 #include <QWidget>
 
-#include "../../Achille.h"
+#include "../../components/CentralWidget.h"
 
 class MultiD : public QDialog
 {
 public :
-    explicit MultiD(Achille *parent = nullptr);
+    explicit MultiD(CentralWidget *parent = nullptr);
     QVBoxLayout *layout;
 
 private:

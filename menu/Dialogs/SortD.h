@@ -9,12 +9,12 @@
 #include <QWidget>
 #include <QtAlgorithms>
 
-#include "../../Achille.h"
+#include "../../components/CentralWidget.h"
 
 class SortD : public QDialog
 {
 public :
-    explicit SortD(Achille *parent = nullptr);
+    explicit SortD(CentralWidget *parent = nullptr);
     QVBoxLayout *layout;
 
 private:

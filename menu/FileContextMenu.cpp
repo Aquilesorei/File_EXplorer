@@ -1,10 +1,10 @@
 #include <QPixmap>
-#include "../Actions.h"
+#include "../components/Actions.h"
 #include "FileContextMenu.h"
-#include "../tabwidget.h"
+#include "../components/tabwidget.h"
 
 
-FileContextMenu::FileContextMenu(Achille *parent) {
+FileContextMenu::FileContextMenu(CentralWidget *parent) {
 
     bWidget = parent;
     Act = new Actions;

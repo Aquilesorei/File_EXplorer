@@ -1,5 +1,5 @@
 #include "DirView.h"
-#include "../Achille.h"
+#include "../components/CentralWidget.h"
 #include "../menu/folderContextMenu.h"
 #include "../menu/FileContextMenu.h"
 #include "../menu/BackgroundContextMenu.h"
@@ -18,7 +18,7 @@ DirView::DirView(QWidget *parent):QListWidget(parent)
     this->setFocusPolicy(Qt::NoFocus);
     this->setContextMenuPolicy(Qt::CustomContextMenu);
 
-    // bWidget = new Achille;
+    // bWidget = new CentralWidget;
 
 }
 DirView::~DirView()
@@ -87,7 +87,7 @@ QDesktopServices::openUrl(QUrl::fromLocalFile(path));*/
 // else
 // {
 /*QString pathg = mo->filePath(this->currentIndex())+"/";
-Achille *A= new Achille;
+CentralWidget *A= new CentralWidget;
 A->model->setRootPath(pathg);
 A->view->setRootIndex(A->model->index(pathg));
 //A->model->ref

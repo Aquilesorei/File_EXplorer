@@ -14,7 +14,7 @@ FenPrincipale::FenPrincipale():window(new QMainWindow)
     this->setIconSize(QSize(50,50));
     this->setBaseSize(QSize(100,100));
     this->setAnimated(true);
-    A = new Achille;
+    A = new CentralWidget;
     w = new Welcome;
     tab = new tabWidget;
 
@@ -242,7 +242,7 @@ FenPrincipale::FenPrincipale():window(new QMainWindow)
     //QObject::connect(vue,SIGNAL(clicked()),this,SLOT(on_listView_clicked()));
 
       connect(toolbarFichiers->ActionAll, &QAction::triggered, this,&FenPrincipale::selecta);
-      connect(A, &Achille::selectAllstatus, this,&FenPrincipale::handleSelect);
+      connect(A, &CentralWidget::selectAllstatus, this, &FenPrincipale::handleSelect);
       connect(this, &FenPrincipale::centralChanged, this,&FenPrincipale::setDock);
       connect(this, &FenPrincipale::centralChanged, this,&FenPrincipale::configToolbar);
       configToolbar(central::welcome);
@@ -253,7 +253,7 @@ void FenPrincipale::onListViewClicked()
     if(centralWidget()== w){
     connect(home,SIGNAL(clicked()),this,SLOT(onHomeClicked()));
      delete(w);
-    // A = new Achille;
+    // A = new CentralWidget;
      tab = new tabWidget;
     // A->loadDir();
 
@@ -276,7 +276,7 @@ void FenPrincipale::onDownloadsClicked()
          connect(w->Documents, SIGNAL(clicked()), this,SLOT(onDocumentClicked()));
 
          delete(w);
-        // A = new Achille;
+        // A = new CentralWidget;
          tab = new tabWidget;
         // A->loadDir();
 
@@ -485,8 +485,8 @@ void FenPrincipale::setNavBar() {
     } else {
         avancer->setEnabled(true);
     }
-    connect(A,&Achille::dirChanged,this,&FenPrincipale::onDirChanged);
-    connect(A,&Achille::historyChanged,this,&FenPrincipale::onHistoryChanged);
+    connect(A, &CentralWidget::dirChanged, this, &FenPrincipale::onDirChanged);
+    connect(A, &CentralWidget::historyChanged, this, &FenPrincipale::onHistoryChanged);
 }
 
 void FenPrincipale::connecto()

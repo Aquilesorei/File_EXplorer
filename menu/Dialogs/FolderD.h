@@ -7,12 +7,12 @@
 #include <QLabel>
 #include <QWidget>
 
-#include "../../Achille.h"
+#include "../../components/CentralWidget.h"
 
 class FolderD : public QDialog
 {
 public :
-    explicit FolderD(Achille *parent = nullptr);
+    explicit FolderD(CentralWidget *parent = nullptr);
     QVBoxLayout *layout;
     QVariant store(unsigned long int value);
 

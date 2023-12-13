@@ -2,11 +2,11 @@
 #define BACKGROUNDCONTEXTMENU_H
 #include <QMenu>
 #include <QAction>
-#include "../Actions.h"
+#include "../components/Actions.h"
 
 #include <QClipboard>
 #include "Dialogs/Progressa.h"
-#include "../Achille.h"
+#include "../components/CentralWidget.h"
 #include <QProgressDialog>
 #include <QByteArray>
 #include <QDataStream>
@@ -15,12 +15,12 @@ class BackgroundContextMenu : public QMenu {
     Q_OBJECT
 
 public:
-    explicit BackgroundContextMenu(Achille *b= nullptr);
+    explicit BackgroundContextMenu(CentralWidget *b= nullptr);
     ~BackgroundContextMenu();
     bool copia(QString src,QString dest);
     QClipboard *board =QApplication::clipboard();
     QString texte = board->text();
-    Achille A;
+    CentralWidget A;
     bool copyDirectoryFiles(const QString &fromDir, const QString &toDir, bool coverFileIfExist);
     Progressa *progress;
     bool continuer;
@@ -32,7 +32,7 @@ public:
 
 
 private:
-    Achille *bWidget;
+    CentralWidget *bWidget;
     Actions *Act;
     QAction *paste, *openTerminal;
     QAction *Iconview,*Listview,*sort,*newfile,*newfolder,*properties;

@@ -29,10 +29,10 @@
 #include <QVariant>
 #include <QMenuBar>
 #include <QPropertyAnimation>
-#include "leftWidget.h"
-#include "Achille.h"
-#include "Welcome.h"
-#include "tabwidget.h"
+#include "components/leftWidget.h"
+#include "components/CentralWidget.h"
+#include "components/Welcome.h"
+#include "components/tabwidget.h"
 #include "toolbars/toolbarfichiers.h"
 class QMainWindow;
 
@@ -41,7 +41,7 @@ class QAction;
 class QMenu;
 
 
-class Achille;
+class CentralWidget;
 class Welcome;
 class tabWidget;
 class leftWidget;
@@ -59,7 +59,7 @@ class FenPrincipale : public QMainWindow
 public:
     FenPrincipale();
 
-    Achille *A;
+    CentralWidget *A;
     Welcome *w;
 
     //menuoption

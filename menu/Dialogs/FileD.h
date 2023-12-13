@@ -6,12 +6,12 @@
 #include <QFileInfo>
 #include <QLabel>
 #include <QWidget>
-#include "../../Achille.h"
+#include "../../components/CentralWidget.h"
 
 class FileD : public QDialog
 {
 public :
-    explicit FileD(Achille *parent = nullptr);
+    explicit FileD(CentralWidget *parent = nullptr);
     QVBoxLayout *layout;
     QWidget *widget;
 

@@ -1,54 +1,98 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'QRoundProgressBar.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.3.1)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../libs/QRoundProgressBar/QRoundProgressBar.h"
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+
+#if __has_include(<QtCore/qtmochelpers.h>)
+#include <QtCore/qtmochelpers.h>
+#else
+QT_BEGIN_MOC_NAMESPACE
+#endif
+
+
+#include <memory>
+
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'QRoundProgressBar.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.3.1. It"
+#error "This file was generated using the moc from 6.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_QRoundProgressBar_t {
-    const uint offsetsAndSize[18];
-    char stringdata0[71];
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
+
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSQRoundProgressBarENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSQRoundProgressBarENDCLASS = QtMocHelpers::stringData(
+    "QRoundProgressBar",
+    "setRange",
+    "",
+    "min",
+    "max",
+    "setMinimum",
+    "setMaximum",
+    "setValue",
+    "val"
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASSQRoundProgressBarENDCLASS_t {
+    uint offsetsAndSizes[18];
+    char stringdata0[18];
+    char stringdata1[9];
+    char stringdata2[1];
+    char stringdata3[4];
+    char stringdata4[4];
+    char stringdata5[11];
+    char stringdata6[11];
+    char stringdata7[9];
+    char stringdata8[4];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_QRoundProgressBar_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_QRoundProgressBar_t qt_meta_stringdata_QRoundProgressBar = {
+    uint(sizeof(qt_meta_stringdata_CLASSQRoundProgressBarENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSQRoundProgressBarENDCLASS_t qt_meta_stringdata_CLASSQRoundProgressBarENDCLASS = {
     {
-QT_MOC_LITERAL(0, 17), // "QRoundProgressBar"
-QT_MOC_LITERAL(18, 8), // "setRange"
-QT_MOC_LITERAL(27, 0), // ""
-QT_MOC_LITERAL(28, 3), // "min"
-QT_MOC_LITERAL(32, 3), // "max"
-QT_MOC_LITERAL(36, 10), // "setMinimum"
-QT_MOC_LITERAL(47, 10), // "setMaximum"
-QT_MOC_LITERAL(58, 8), // "setValue"
-QT_MOC_LITERAL(67, 3) // "val"
-
+        QT_MOC_LITERAL(0, 17),  // "QRoundProgressBar"
+        QT_MOC_LITERAL(18, 8),  // "setRange"
+        QT_MOC_LITERAL(27, 0),  // ""
+        QT_MOC_LITERAL(28, 3),  // "min"
+        QT_MOC_LITERAL(32, 3),  // "max"
+        QT_MOC_LITERAL(36, 10),  // "setMinimum"
+        QT_MOC_LITERAL(47, 10),  // "setMaximum"
+        QT_MOC_LITERAL(58, 8),  // "setValue"
+        QT_MOC_LITERAL(67, 3)   // "val"
     },
-    "QRoundProgressBar\0setRange\0\0min\0max\0"
-    "setMinimum\0setMaximum\0setValue\0val"
+    "QRoundProgressBar",
+    "setRange",
+    "",
+    "min",
+    "max",
+    "setMinimum",
+    "setMaximum",
+    "setValue",
+    "val"
 };
 #undef QT_MOC_LITERAL
+#endif // !QT_MOC_HAS_STRING_DATA
+} // unnamed namespace
 
-static const uint qt_meta_data_QRoundProgressBar[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSQRoundProgressBarENDCLASS[] = {
 
  // content:
-      10,       // revision
+      11,       // revision
        0,       // classname
        0,    0, // classinfo
        5,   14, // methods
@@ -75,6 +119,35 @@ static const uint qt_meta_data_QRoundProgressBar[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject QRoundProgressBar::staticMetaObject = { {
+    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
+    qt_meta_stringdata_CLASSQRoundProgressBarENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSQRoundProgressBarENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSQRoundProgressBarENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<QRoundProgressBar, std::true_type>,
+        // method 'setRange'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'setMinimum'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'setMaximum'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'setValue'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'setValue'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
+    >,
+    nullptr
+} };
+
 void QRoundProgressBar::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -91,22 +164,6 @@ void QRoundProgressBar::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
     }
 }
 
-const QMetaObject QRoundProgressBar::staticMetaObject = { {
-    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_QRoundProgressBar.offsetsAndSize,
-    qt_meta_data_QRoundProgressBar,
-    qt_static_metacall,
-    nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_QRoundProgressBar_t
-, QtPrivate::TypeAndForceComplete<QRoundProgressBar, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>
-
-
->,
-    nullptr
-} };
-
-
 const QMetaObject *QRoundProgressBar::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
@@ -115,7 +172,7 @@ const QMetaObject *QRoundProgressBar::metaObject() const
 void *QRoundProgressBar::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_QRoundProgressBar.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSQRoundProgressBarENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
@@ -137,4 +194,3 @@ int QRoundProgressBar::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     return _id;
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

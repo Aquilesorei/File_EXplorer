@@ -16,26 +16,26 @@
 #include <QClipboard>
 #include <QMimeData>
 #include "tabwidget.h"
-#include "Achille.h"
+#include "CentralWidget.h"
 #include <QDialog>
 #include <QByteArray>
-#include "menu/Dialogs/FolderD.h"
-#include "menu/Dialogs/FileD.h"
-#include "menu/Dialogs/MultiD.h"
-#include "menu/Dialogs/SortD.h"
-#include "menu/Dialogs/openWith.h"
+#include "../menu/Dialogs/FolderD.h"
+#include "../menu/Dialogs/FileD.h"
+#include "../menu/Dialogs/MultiD.h"
+#include "../menu/Dialogs/SortD.h"
+#include "../menu/Dialogs/openWith.h"
 //#include "Trash.h"
 #include <QTextStream>
 //#include <boost/asio.hpp>
 
-#include "libs/quazip/JlCompress.h"
+#include "../libs/quazip/JlCompress.h"
 //#include <quazip5/quazip.h>
 #include "Archiva.h"
 Actions::Actions()
 {
 
     board = QApplication::clipboard();
-    A = new Achille;
+    A = new CentralWidget;
 
 
 

@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
+set(Qt6_DIR "/home/aquiles/Qt/6.5.1/gcc_64/lib/cmake/Qt6")
+set(CMAKE_PREFIX_PATH "/home/aquiles/Qt/6.5.1/gcc_64")
 
 find_package(Qt6 COMPONENTS
         Core
@@ -19,9 +21,9 @@ find_package(Qt6 COMPONENTS
         REQUIRED)
         
         
-   add_executable(File_Explorer main.cpp   Achille.cpp  Achille.h  Actions.cpp    Actions.h  Analysa.cpp  Analysa.h  Archiva.cpp  Archiva.h  FenPrincipale.cpp  FenPrincipale.h FileTransfertHome.cpp   FileTransfertHome.h  Welcome.cpp   Welcome.h leftWidget.cpp
-    leftWidget.h    searchbar.cpp searchbar.h 
-      tabwidget.cpp tabwidget.h
+   add_executable(File_Explorer main.cpp components/CentralWidget.cpp components/CentralWidget.h components/Actions.cpp components/Actions.h components/Analysa.cpp components/Analysa.h components/Archiva.cpp components/Archiva.h FenPrincipale.cpp  FenPrincipale.h FileTransfertHome.cpp   FileTransfertHome.h components/Welcome.cpp components/Welcome.h components/leftWidget.cpp
+           components/leftWidget.h components/searchbar.cpp components/searchbar.h
+           components/tabwidget.cpp components/tabwidget.h
            ${CMAKE_CURRENT_SOURCE_DIR}/Views/DirView.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/Views/DirView.h
     ${CMAKE_CURRENT_SOURCE_DIR}/Views/leftView.cpp 

@@ -1,6 +1,6 @@
 #include "FolderD.h"
-#include "../../tabwidget.h"
-FolderD::FolderD(Achille *parent):QDialog(parent)
+#include "../../components/tabwidget.h"
+FolderD::FolderD(CentralWidget *parent): QDialog(parent)
 {
 
 

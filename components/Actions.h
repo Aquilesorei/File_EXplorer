@@ -5,7 +5,7 @@
 #include <QDialog>
 #include <QThread>
 #include <string>
-#include "Achille.h"
+#include "CentralWidget.h"
 #include <QStringList>
 #include <QClipboard>
 #include "tabwidget.h"
@@ -53,7 +53,7 @@ public :
      bool move{};
      QStringList list;
      QStringList liste;
-     Achille *A;
+     CentralWidget *A;
      QString elem;
      QProgressDialog *progress{};
      bool unique= false;

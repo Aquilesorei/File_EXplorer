@@ -1,52 +1,88 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'Actions.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.3.1)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../Actions.h"
 #include <QtGui/qtextcursor.h>
 #include <QScreen>
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+
+#if __has_include(<QtCore/qtmochelpers.h>)
+#include <QtCore/qtmochelpers.h>
+#else
+QT_BEGIN_MOC_NAMESPACE
+#endif
+
+
+#include <memory>
+
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'Actions.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.3.1. It"
+#error "This file was generated using the moc from 6.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_Actions_t {
-    const uint offsetsAndSize[12];
-    char stringdata0[31];
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
+
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSActionsENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSActionsENDCLASS = QtMocHelpers::stringData(
+    "Actions",
+    "pasta",
+    "",
+    "src",
+    "dest",
+    "unique"
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASSActionsENDCLASS_t {
+    uint offsetsAndSizes[12];
+    char stringdata0[8];
+    char stringdata1[6];
+    char stringdata2[1];
+    char stringdata3[4];
+    char stringdata4[5];
+    char stringdata5[7];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_Actions_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_Actions_t qt_meta_stringdata_Actions = {
+    uint(sizeof(qt_meta_stringdata_CLASSActionsENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSActionsENDCLASS_t qt_meta_stringdata_CLASSActionsENDCLASS = {
     {
-QT_MOC_LITERAL(0, 7), // "Actions"
-QT_MOC_LITERAL(8, 5), // "pasta"
-QT_MOC_LITERAL(14, 0), // ""
-QT_MOC_LITERAL(15, 3), // "src"
-QT_MOC_LITERAL(19, 4), // "dest"
-QT_MOC_LITERAL(24, 6) // "unique"
-
+        QT_MOC_LITERAL(0, 7),  // "Actions"
+        QT_MOC_LITERAL(8, 5),  // "pasta"
+        QT_MOC_LITERAL(14, 0),  // ""
+        QT_MOC_LITERAL(15, 3),  // "src"
+        QT_MOC_LITERAL(19, 4),  // "dest"
+        QT_MOC_LITERAL(24, 6)   // "unique"
     },
-    "Actions\0pasta\0\0src\0dest\0unique"
+    "Actions",
+    "pasta",
+    "",
+    "src",
+    "dest",
+    "unique"
 };
 #undef QT_MOC_LITERAL
+#endif // !QT_MOC_HAS_STRING_DATA
+} // unnamed namespace
 
-static const uint qt_meta_data_Actions[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSActionsENDCLASS[] = {
 
  // content:
-      10,       // revision
+      11,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -65,6 +101,24 @@ static const uint qt_meta_data_Actions[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject Actions::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_meta_stringdata_CLASSActionsENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSActionsENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSActionsENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<Actions, std::true_type>,
+        // method 'pasta'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>
+    >,
+    nullptr
+} };
+
 void Actions::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -78,29 +132,13 @@ void Actions::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (Actions::*)(QString , QString , bool );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Actions::pasta)) {
+            if (_t _q_method = &Actions::pasta; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
     }
 }
-
-const QMetaObject Actions::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_Actions.offsetsAndSize,
-    qt_meta_data_Actions,
-    qt_static_metacall,
-    nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_Actions_t
-, QtPrivate::TypeAndForceComplete<Actions, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QString, std::false_type>, QtPrivate::TypeAndForceComplete<QString, std::false_type>, QtPrivate::TypeAndForceComplete<bool, std::false_type>
-
-
-
->,
-    nullptr
-} };
-
 
 const QMetaObject *Actions::metaObject() const
 {
@@ -110,7 +148,7 @@ const QMetaObject *Actions::metaObject() const
 void *Actions::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_Actions.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSActionsENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
@@ -139,4 +177,3 @@ void Actions::pasta(QString _t1, QString _t2, bool _t3)
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

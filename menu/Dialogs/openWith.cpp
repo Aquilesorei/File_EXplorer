@@ -6,7 +6,7 @@
 #include <QMimeDatabase>
 #include <QDirIterator>
 #include "openWith.h"
-#include "../../tabwidget.h"
+#include "../../components/tabwidget.h"
 /*QStringList arguments { "scriptfile.py", "someotherparam", ... };
 QProcess p;
 p.start("python", arguments);

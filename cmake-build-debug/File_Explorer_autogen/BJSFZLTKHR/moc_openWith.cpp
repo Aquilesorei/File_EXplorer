@@ -1,53 +1,90 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'openWith.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.3.1)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../menu/Dialogs/openWith.h"
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+
+#if __has_include(<QtCore/qtmochelpers.h>)
+#include <QtCore/qtmochelpers.h>
+#else
+QT_BEGIN_MOC_NAMESPACE
+#endif
+
+
+#include <memory>
+
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'openWith.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.3.1. It"
+#error "This file was generated using the moc from 6.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_openWith_t {
-    const uint offsetsAndSize[14];
-    char stringdata0[80];
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
+
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSopenWithENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSopenWithENDCLASS = QtMocHelpers::stringData(
+    "openWith",
+    "onItemDoubleClicked",
+    "",
+    "QTreeWidgetItem*",
+    "item",
+    "onCancelClicked",
+    "onOkClicked"
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASSopenWithENDCLASS_t {
+    uint offsetsAndSizes[14];
+    char stringdata0[9];
+    char stringdata1[20];
+    char stringdata2[1];
+    char stringdata3[17];
+    char stringdata4[5];
+    char stringdata5[16];
+    char stringdata6[12];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_openWith_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_openWith_t qt_meta_stringdata_openWith = {
+    uint(sizeof(qt_meta_stringdata_CLASSopenWithENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSopenWithENDCLASS_t qt_meta_stringdata_CLASSopenWithENDCLASS = {
     {
-QT_MOC_LITERAL(0, 8), // "openWith"
-QT_MOC_LITERAL(9, 19), // "onItemDoubleClicked"
-QT_MOC_LITERAL(29, 0), // ""
-QT_MOC_LITERAL(30, 16), // "QTreeWidgetItem*"
-QT_MOC_LITERAL(47, 4), // "item"
-QT_MOC_LITERAL(52, 15), // "onCancelClicked"
-QT_MOC_LITERAL(68, 11) // "onOkClicked"
-
+        QT_MOC_LITERAL(0, 8),  // "openWith"
+        QT_MOC_LITERAL(9, 19),  // "onItemDoubleClicked"
+        QT_MOC_LITERAL(29, 0),  // ""
+        QT_MOC_LITERAL(30, 16),  // "QTreeWidgetItem*"
+        QT_MOC_LITERAL(47, 4),  // "item"
+        QT_MOC_LITERAL(52, 15),  // "onCancelClicked"
+        QT_MOC_LITERAL(68, 11)   // "onOkClicked"
     },
-    "openWith\0onItemDoubleClicked\0\0"
-    "QTreeWidgetItem*\0item\0onCancelClicked\0"
+    "openWith",
+    "onItemDoubleClicked",
+    "",
+    "QTreeWidgetItem*",
+    "item",
+    "onCancelClicked",
     "onOkClicked"
 };
 #undef QT_MOC_LITERAL
+#endif // !QT_MOC_HAS_STRING_DATA
+} // unnamed namespace
 
-static const uint qt_meta_data_openWith[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSopenWithENDCLASS[] = {
 
  // content:
-      10,       // revision
+      11,       // revision
        0,       // classname
        0,    0, // classinfo
        3,   14, // methods
@@ -70,6 +107,26 @@ static const uint qt_meta_data_openWith[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject openWith::staticMetaObject = { {
+    QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
+    qt_meta_stringdata_CLASSopenWithENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSopenWithENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSopenWithENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<openWith, std::true_type>,
+        // method 'onItemDoubleClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QTreeWidgetItem *, std::false_type>,
+        // method 'onCancelClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onOkClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
+    >,
+    nullptr
+} };
+
 void openWith::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -84,22 +141,6 @@ void openWith::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     }
 }
 
-const QMetaObject openWith::staticMetaObject = { {
-    QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
-    qt_meta_stringdata_openWith.offsetsAndSize,
-    qt_meta_data_openWith,
-    qt_static_metacall,
-    nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_openWith_t
-, QtPrivate::TypeAndForceComplete<openWith, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QTreeWidgetItem *, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
-
-
->,
-    nullptr
-} };
-
-
 const QMetaObject *openWith::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
@@ -108,7 +149,7 @@ const QMetaObject *openWith::metaObject() const
 void *openWith::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_openWith.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSopenWithENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
@@ -130,4 +171,3 @@ int openWith::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     return _id;
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

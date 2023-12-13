@@ -1,8 +1,8 @@
 #ifndef ARCHIVA_H
 #define ARCHIVA_H
 #include <QWidget>
-#include "libs/quazip/quazip.h"
-#include "libs/quazip/quazipfileinfo.h"
+#include "../libs/quazip/quazip.h"
+#include "../libs/quazip/quazipfileinfo.h"
 class Archiva: public QWidget
 {
     Q_OBJECT

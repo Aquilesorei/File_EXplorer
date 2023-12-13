@@ -3,17 +3,17 @@
 #include <QMenu>
 
 
-#include "../Achille.h"
-#include "../Actions.h"
+#include "../components/CentralWidget.h"
+#include "../components/Actions.h"
 
 class FolderContextMenu : public QMenu {
     Q_OBJECT
 public:
-    explicit FolderContextMenu(Achille *parent);
+    explicit FolderContextMenu(CentralWidget *parent);
 
 
 private:
-    Achille *bWidget;
+    CentralWidget *bWidget;
     QAction *openTab, *cut, *copy,*rename, *trash, *restore, *deleteFolder,*open,*paste,*properties;
     QAction *compress,*openTerminal;
     static void _open();

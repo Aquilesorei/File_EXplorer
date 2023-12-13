@@ -5,12 +5,12 @@
 #include <QTabWidget>
 #include <QVector>
 #include <cstdio>
-#include "Achille.h"
+#include "CentralWidget.h"
 // libdisks
 /*#ifndef NO_UDISKS
 
 #endif*/
-class Achille;
+class CentralWidget;
 class tabWidget : public QWidget {
     Q_OBJECT
 public:
@@ -21,9 +21,9 @@ public:
     static void addNewTab();
 
     [[maybe_unused]] static void closeCurrentTab();
-    static Achille *currentWidget();
+    static CentralWidget *currentWidget();
     static void updateTabName();
-    static QVector<Achille *> allWidgets();
+    static QVector<CentralWidget *> allWidgets();
     // libdisks
 /*#ifndef NO_UDISKS
     void populateMedia();

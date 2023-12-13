@@ -9,8 +9,8 @@
 #include<QMenuBar>
 #include<QMainWindow>
 #include<QDesktopServices>
-#include "Achille.h"
-#include "FenPrincipale.h"
+#include "CentralWidget.h"
+#include "../FenPrincipale.h"
 #include "tabwidget.h"
 class Dialog : public QDialog
 {

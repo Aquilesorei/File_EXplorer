@@ -1,68 +1,136 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'BackgroundContextMenu.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.3.1)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../menu/BackgroundContextMenu.h"
 #include <QtGui/qtextcursor.h>
 #include <QScreen>
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+
+#if __has_include(<QtCore/qtmochelpers.h>)
+#include <QtCore/qtmochelpers.h>
+#else
+QT_BEGIN_MOC_NAMESPACE
+#endif
+
+
+#include <memory>
+
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'BackgroundContextMenu.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.3.1. It"
+#error "This file was generated using the moc from 6.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_BackgroundContextMenu_t {
-    const uint offsetsAndSize[36];
-    char stringdata0[153];
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
+
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSBackgroundContextMenuENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSBackgroundContextMenuENDCLASS = QtMocHelpers::stringData(
+    "BackgroundContextMenu",
+    "Value",
+    "",
+    "value",
+    "Total",
+    "tot",
+    "started",
+    "fdone",
+    "oniview",
+    "onlview",
+    "onsort",
+    "_newFolder",
+    "_newfile",
+    "proper",
+    "openT",
+    "onpaste",
+    "handleProgress",
+    "updateProgress"
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASSBackgroundContextMenuENDCLASS_t {
+    uint offsetsAndSizes[36];
+    char stringdata0[22];
+    char stringdata1[6];
+    char stringdata2[1];
+    char stringdata3[6];
+    char stringdata4[6];
+    char stringdata5[4];
+    char stringdata6[8];
+    char stringdata7[6];
+    char stringdata8[8];
+    char stringdata9[8];
+    char stringdata10[7];
+    char stringdata11[11];
+    char stringdata12[9];
+    char stringdata13[7];
+    char stringdata14[6];
+    char stringdata15[8];
+    char stringdata16[15];
+    char stringdata17[15];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_BackgroundContextMenu_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_BackgroundContextMenu_t qt_meta_stringdata_BackgroundContextMenu = {
+    uint(sizeof(qt_meta_stringdata_CLASSBackgroundContextMenuENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSBackgroundContextMenuENDCLASS_t qt_meta_stringdata_CLASSBackgroundContextMenuENDCLASS = {
     {
-QT_MOC_LITERAL(0, 21), // "BackgroundContextMenu"
-QT_MOC_LITERAL(22, 5), // "Value"
-QT_MOC_LITERAL(28, 0), // ""
-QT_MOC_LITERAL(29, 5), // "value"
-QT_MOC_LITERAL(35, 5), // "Total"
-QT_MOC_LITERAL(41, 3), // "tot"
-QT_MOC_LITERAL(45, 7), // "started"
-QT_MOC_LITERAL(53, 5), // "fdone"
-QT_MOC_LITERAL(59, 7), // "oniview"
-QT_MOC_LITERAL(67, 7), // "onlview"
-QT_MOC_LITERAL(75, 6), // "onsort"
-QT_MOC_LITERAL(82, 10), // "_newFolder"
-QT_MOC_LITERAL(93, 8), // "_newfile"
-QT_MOC_LITERAL(102, 6), // "proper"
-QT_MOC_LITERAL(109, 5), // "openT"
-QT_MOC_LITERAL(115, 7), // "onpaste"
-QT_MOC_LITERAL(123, 14), // "handleProgress"
-QT_MOC_LITERAL(138, 14) // "updateProgress"
-
+        QT_MOC_LITERAL(0, 21),  // "BackgroundContextMenu"
+        QT_MOC_LITERAL(22, 5),  // "Value"
+        QT_MOC_LITERAL(28, 0),  // ""
+        QT_MOC_LITERAL(29, 5),  // "value"
+        QT_MOC_LITERAL(35, 5),  // "Total"
+        QT_MOC_LITERAL(41, 3),  // "tot"
+        QT_MOC_LITERAL(45, 7),  // "started"
+        QT_MOC_LITERAL(53, 5),  // "fdone"
+        QT_MOC_LITERAL(59, 7),  // "oniview"
+        QT_MOC_LITERAL(67, 7),  // "onlview"
+        QT_MOC_LITERAL(75, 6),  // "onsort"
+        QT_MOC_LITERAL(82, 10),  // "_newFolder"
+        QT_MOC_LITERAL(93, 8),  // "_newfile"
+        QT_MOC_LITERAL(102, 6),  // "proper"
+        QT_MOC_LITERAL(109, 5),  // "openT"
+        QT_MOC_LITERAL(115, 7),  // "onpaste"
+        QT_MOC_LITERAL(123, 14),  // "handleProgress"
+        QT_MOC_LITERAL(138, 14)   // "updateProgress"
     },
-    "BackgroundContextMenu\0Value\0\0value\0"
-    "Total\0tot\0started\0fdone\0oniview\0onlview\0"
-    "onsort\0_newFolder\0_newfile\0proper\0"
-    "openT\0onpaste\0handleProgress\0"
+    "BackgroundContextMenu",
+    "Value",
+    "",
+    "value",
+    "Total",
+    "tot",
+    "started",
+    "fdone",
+    "oniview",
+    "onlview",
+    "onsort",
+    "_newFolder",
+    "_newfile",
+    "proper",
+    "openT",
+    "onpaste",
+    "handleProgress",
     "updateProgress"
 };
 #undef QT_MOC_LITERAL
+#endif // !QT_MOC_HAS_STRING_DATA
+} // unnamed namespace
 
-static const uint qt_meta_data_BackgroundContextMenu[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSBackgroundContextMenuENDCLASS[] = {
 
  // content:
-      10,       // revision
+      11,       // revision
        0,       // classname
        0,    0, // classinfo
       14,   14, // methods
@@ -111,6 +179,49 @@ static const uint qt_meta_data_BackgroundContextMenu[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject BackgroundContextMenu::staticMetaObject = { {
+    QMetaObject::SuperData::link<QMenu::staticMetaObject>(),
+    qt_meta_stringdata_CLASSBackgroundContextMenuENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSBackgroundContextMenuENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSBackgroundContextMenuENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<BackgroundContextMenu, std::true_type>,
+        // method 'Value'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'Total'
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'started'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'fdone'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'oniview'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onlview'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onsort'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method '_newFolder'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method '_newfile'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'proper'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'openT'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onpaste'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'handleProgress'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'updateProgress'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
+    >,
+    nullptr
+} };
+
 void BackgroundContextMenu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -138,50 +249,34 @@ void BackgroundContextMenu::qt_static_metacall(QObject *_o, QMetaObject::Call _c
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (BackgroundContextMenu::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BackgroundContextMenu::Value)) {
+            if (_t _q_method = &BackgroundContextMenu::Value; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
         {
             using _t = int (BackgroundContextMenu::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BackgroundContextMenu::Total)) {
+            if (_t _q_method = &BackgroundContextMenu::Total; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
         }
         {
             using _t = void (BackgroundContextMenu::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BackgroundContextMenu::started)) {
+            if (_t _q_method = &BackgroundContextMenu::started; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 2;
                 return;
             }
         }
         {
             using _t = void (BackgroundContextMenu::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BackgroundContextMenu::fdone)) {
+            if (_t _q_method = &BackgroundContextMenu::fdone; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 3;
                 return;
             }
         }
     }
 }
-
-const QMetaObject BackgroundContextMenu::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMenu::staticMetaObject>(),
-    qt_meta_stringdata_BackgroundContextMenu.offsetsAndSize,
-    qt_meta_data_BackgroundContextMenu,
-    qt_static_metacall,
-    nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_BackgroundContextMenu_t
-, QtPrivate::TypeAndForceComplete<BackgroundContextMenu, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
-
-
->,
-    nullptr
-} };
-
 
 const QMetaObject *BackgroundContextMenu::metaObject() const
 {
@@ -191,7 +286,7 @@ const QMetaObject *BackgroundContextMenu::metaObject() const
 void *BackgroundContextMenu::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_BackgroundContextMenu.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSBackgroundContextMenuENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QMenu::qt_metacast(_clname);
 }
@@ -241,4 +336,3 @@ void BackgroundContextMenu::fdone()
     QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

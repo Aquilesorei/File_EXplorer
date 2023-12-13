@@ -1,58 +1,104 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'toolbarfichiers.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.3.1)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../toolbars/toolbarfichiers.h"
 #include <QtGui/qtextcursor.h>
 #include <QScreen>
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+
+#if __has_include(<QtCore/qtmochelpers.h>)
+#include <QtCore/qtmochelpers.h>
+#else
+QT_BEGIN_MOC_NAMESPACE
+#endif
+
+
+#include <memory>
+
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'toolbarfichiers.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.3.1. It"
+#error "This file was generated using the moc from 6.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_toolbarfichier_t {
-    const uint offsetsAndSize[20];
-    char stringdata0[77];
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
+
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASStoolbarfichierENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASStoolbarfichierENDCLASS = QtMocHelpers::stringData(
+    "toolbarfichier",
+    "addNew",
+    "",
+    "configActions",
+    "_copy",
+    "_cut",
+    "_paste",
+    "_rename",
+    "_delete",
+    "_sort"
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASStoolbarfichierENDCLASS_t {
+    uint offsetsAndSizes[20];
+    char stringdata0[15];
+    char stringdata1[7];
+    char stringdata2[1];
+    char stringdata3[14];
+    char stringdata4[6];
+    char stringdata5[5];
+    char stringdata6[7];
+    char stringdata7[8];
+    char stringdata8[8];
+    char stringdata9[6];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_toolbarfichier_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_toolbarfichier_t qt_meta_stringdata_toolbarfichier = {
+    uint(sizeof(qt_meta_stringdata_CLASStoolbarfichierENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASStoolbarfichierENDCLASS_t qt_meta_stringdata_CLASStoolbarfichierENDCLASS = {
     {
-QT_MOC_LITERAL(0, 14), // "toolbarfichier"
-QT_MOC_LITERAL(15, 6), // "addNew"
-QT_MOC_LITERAL(22, 0), // ""
-QT_MOC_LITERAL(23, 13), // "configActions"
-QT_MOC_LITERAL(37, 5), // "_copy"
-QT_MOC_LITERAL(43, 4), // "_cut"
-QT_MOC_LITERAL(48, 6), // "_paste"
-QT_MOC_LITERAL(55, 7), // "_rename"
-QT_MOC_LITERAL(63, 7), // "_delete"
-QT_MOC_LITERAL(71, 5) // "_sort"
-
+        QT_MOC_LITERAL(0, 14),  // "toolbarfichier"
+        QT_MOC_LITERAL(15, 6),  // "addNew"
+        QT_MOC_LITERAL(22, 0),  // ""
+        QT_MOC_LITERAL(23, 13),  // "configActions"
+        QT_MOC_LITERAL(37, 5),  // "_copy"
+        QT_MOC_LITERAL(43, 4),  // "_cut"
+        QT_MOC_LITERAL(48, 6),  // "_paste"
+        QT_MOC_LITERAL(55, 7),  // "_rename"
+        QT_MOC_LITERAL(63, 7),  // "_delete"
+        QT_MOC_LITERAL(71, 5)   // "_sort"
     },
-    "toolbarfichier\0addNew\0\0configActions\0"
-    "_copy\0_cut\0_paste\0_rename\0_delete\0"
+    "toolbarfichier",
+    "addNew",
+    "",
+    "configActions",
+    "_copy",
+    "_cut",
+    "_paste",
+    "_rename",
+    "_delete",
     "_sort"
 };
 #undef QT_MOC_LITERAL
+#endif // !QT_MOC_HAS_STRING_DATA
+} // unnamed namespace
 
-static const uint qt_meta_data_toolbarfichier[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASStoolbarfichierENDCLASS[] = {
 
  // content:
-      10,       // revision
+      11,       // revision
        0,       // classname
        0,    0, // classinfo
        8,   14, // methods
@@ -85,6 +131,35 @@ static const uint qt_meta_data_toolbarfichier[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject toolbarfichier::staticMetaObject = { {
+    QMetaObject::SuperData::link<QToolBar::staticMetaObject>(),
+    qt_meta_stringdata_CLASStoolbarfichierENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASStoolbarfichierENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASStoolbarfichierENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<toolbarfichier, std::true_type>,
+        // method 'addNew'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'configActions'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method '_copy'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method '_cut'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method '_paste'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method '_rename'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method '_delete'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method '_sort'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
+    >,
+    nullptr
+} };
+
 void toolbarfichier::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -105,22 +180,6 @@ void toolbarfichier::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     (void)_a;
 }
 
-const QMetaObject toolbarfichier::staticMetaObject = { {
-    QMetaObject::SuperData::link<QToolBar::staticMetaObject>(),
-    qt_meta_stringdata_toolbarfichier.offsetsAndSize,
-    qt_meta_data_toolbarfichier,
-    qt_static_metacall,
-    nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_toolbarfichier_t
-, QtPrivate::TypeAndForceComplete<toolbarfichier, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
-
-
->,
-    nullptr
-} };
-
-
 const QMetaObject *toolbarfichier::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
@@ -129,7 +188,7 @@ const QMetaObject *toolbarfichier::metaObject() const
 void *toolbarfichier::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_toolbarfichier.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASStoolbarfichierENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QToolBar::qt_metacast(_clname);
 }
@@ -151,4 +210,3 @@ int toolbarfichier::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     return _id;
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

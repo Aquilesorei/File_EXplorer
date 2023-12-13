@@ -2,11 +2,11 @@
 
 #include "MultiContextMenu.h"
 
-#include "../Actions.h"
+#include "../components/Actions.h"
 
-#include "../tabwidget.h"
+#include "../components/tabwidget.h"
 
-MultiContextMenu::MultiContextMenu(Achille *b) {
+MultiContextMenu::MultiContextMenu(CentralWidget *b) {
     bWidget = b;
 
     Act = new Actions;

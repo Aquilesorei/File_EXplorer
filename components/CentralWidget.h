@@ -26,7 +26,7 @@
 #include <QDesktopServices>
 #include <QModelIndexList>
 
-#include "Views/DirView.h"
+#include "../Views/DirView.h"
 
 
 #include <QListWidget>
@@ -42,15 +42,15 @@
 class DirView;
 class SearchBar;
 class FileSystemWatcher;
-class Achille : public QWidget
+class CentralWidget : public QWidget
 {
     Q_OBJECT
     friend class DirView;
     friend class SearchBar;
 public :
-    explicit Achille();
+    explicit CentralWidget();
 
-    ~Achille();
+    ~CentralWidget();
 
     /*friend void DisplayPict();
     friend bool containsPict();
@@ -138,9 +138,9 @@ private:
 class FileSystemWatcher : public QTimer {
     Q_OBJECT
 public:
-    FileSystemWatcher(Achille *widget);
+    FileSystemWatcher(CentralWidget *widget);
 private:
-    Achille *bWidget;
+    CentralWidget *bWidget;
 private slots:
     void onRefresh();
 };

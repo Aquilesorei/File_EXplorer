@@ -1,11 +1,11 @@
 #include <QPixmap>
-#include "../Actions.h"
+#include "../components/Actions.h"
 #include "folderContextMenu.h"
-#include "../tabwidget.h"
+#include "../components/tabwidget.h"
 #include <QProcess>
 
 
-FolderContextMenu::FolderContextMenu(Achille *parent) {
+FolderContextMenu::FolderContextMenu(CentralWidget *parent) {
 
     bWidget = parent;
     Act = new Actions;

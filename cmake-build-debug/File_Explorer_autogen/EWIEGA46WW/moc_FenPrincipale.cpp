@@ -1,79 +1,164 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'FenPrincipale.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.3.1)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../FenPrincipale.h"
 #include <QtGui/qtextcursor.h>
 #include <QScreen>
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+
+#if __has_include(<QtCore/qtmochelpers.h>)
+#include <QtCore/qtmochelpers.h>
+#else
+QT_BEGIN_MOC_NAMESPACE
+#endif
+
+
+#include <memory>
+
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'FenPrincipale.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.3.1. It"
+#error "This file was generated using the moc from 6.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_FenPrincipale_t {
-    const uint offsetsAndSize[50];
-    char stringdata0[300];
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
+
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSFenPrincipaleENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSFenPrincipaleENDCLASS = QtMocHelpers::stringData(
+    "FenPrincipale",
+    "centralChanged",
+    "",
+    "Centrals",
+    "flags",
+    "onListViewClicked",
+    "onDownloadsClicked",
+    "onImageClicked",
+    "onMusicClicked",
+    "onVideosClicked",
+    "onDocumentClicked",
+    "onDesktopClicked",
+    "setDock",
+    "_reculer",
+    "_avancer",
+    "onRefreshClicked",
+    "onHomeClicked",
+    "onDirChanged",
+    "path",
+    "onHistoryChanged",
+    "selecta",
+    "handleSelect",
+    "status",
+    "nb",
+    "configToolbar"
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASSFenPrincipaleENDCLASS_t {
+    uint offsetsAndSizes[50];
+    char stringdata0[14];
+    char stringdata1[15];
+    char stringdata2[1];
+    char stringdata3[9];
+    char stringdata4[6];
+    char stringdata5[18];
+    char stringdata6[19];
+    char stringdata7[15];
+    char stringdata8[15];
+    char stringdata9[16];
+    char stringdata10[18];
+    char stringdata11[17];
+    char stringdata12[8];
+    char stringdata13[9];
+    char stringdata14[9];
+    char stringdata15[17];
+    char stringdata16[14];
+    char stringdata17[13];
+    char stringdata18[5];
+    char stringdata19[17];
+    char stringdata20[8];
+    char stringdata21[13];
+    char stringdata22[7];
+    char stringdata23[3];
+    char stringdata24[14];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_FenPrincipale_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_FenPrincipale_t qt_meta_stringdata_FenPrincipale = {
+    uint(sizeof(qt_meta_stringdata_CLASSFenPrincipaleENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSFenPrincipaleENDCLASS_t qt_meta_stringdata_CLASSFenPrincipaleENDCLASS = {
     {
-QT_MOC_LITERAL(0, 13), // "FenPrincipale"
-QT_MOC_LITERAL(14, 14), // "centralChanged"
-QT_MOC_LITERAL(29, 0), // ""
-QT_MOC_LITERAL(30, 8), // "Centrals"
-QT_MOC_LITERAL(39, 5), // "flags"
-QT_MOC_LITERAL(45, 17), // "onListViewClicked"
-QT_MOC_LITERAL(63, 18), // "onDownloadsClicked"
-QT_MOC_LITERAL(82, 14), // "onImageClicked"
-QT_MOC_LITERAL(97, 14), // "onMusicClicked"
-QT_MOC_LITERAL(112, 15), // "onVideosClicked"
-QT_MOC_LITERAL(128, 17), // "onDocumentClicked"
-QT_MOC_LITERAL(146, 16), // "onDesktopClicked"
-QT_MOC_LITERAL(163, 7), // "setDock"
-QT_MOC_LITERAL(171, 8), // "_reculer"
-QT_MOC_LITERAL(180, 8), // "_avancer"
-QT_MOC_LITERAL(189, 16), // "onRefreshClicked"
-QT_MOC_LITERAL(206, 13), // "onHomeClicked"
-QT_MOC_LITERAL(220, 12), // "onDirChanged"
-QT_MOC_LITERAL(233, 4), // "path"
-QT_MOC_LITERAL(238, 16), // "onHistoryChanged"
-QT_MOC_LITERAL(255, 7), // "selecta"
-QT_MOC_LITERAL(263, 12), // "handleSelect"
-QT_MOC_LITERAL(276, 6), // "status"
-QT_MOC_LITERAL(283, 2), // "nb"
-QT_MOC_LITERAL(286, 13) // "configToolbar"
-
+        QT_MOC_LITERAL(0, 13),  // "FenPrincipale"
+        QT_MOC_LITERAL(14, 14),  // "centralChanged"
+        QT_MOC_LITERAL(29, 0),  // ""
+        QT_MOC_LITERAL(30, 8),  // "Centrals"
+        QT_MOC_LITERAL(39, 5),  // "flags"
+        QT_MOC_LITERAL(45, 17),  // "onListViewClicked"
+        QT_MOC_LITERAL(63, 18),  // "onDownloadsClicked"
+        QT_MOC_LITERAL(82, 14),  // "onImageClicked"
+        QT_MOC_LITERAL(97, 14),  // "onMusicClicked"
+        QT_MOC_LITERAL(112, 15),  // "onVideosClicked"
+        QT_MOC_LITERAL(128, 17),  // "onDocumentClicked"
+        QT_MOC_LITERAL(146, 16),  // "onDesktopClicked"
+        QT_MOC_LITERAL(163, 7),  // "setDock"
+        QT_MOC_LITERAL(171, 8),  // "_reculer"
+        QT_MOC_LITERAL(180, 8),  // "_avancer"
+        QT_MOC_LITERAL(189, 16),  // "onRefreshClicked"
+        QT_MOC_LITERAL(206, 13),  // "onHomeClicked"
+        QT_MOC_LITERAL(220, 12),  // "onDirChanged"
+        QT_MOC_LITERAL(233, 4),  // "path"
+        QT_MOC_LITERAL(238, 16),  // "onHistoryChanged"
+        QT_MOC_LITERAL(255, 7),  // "selecta"
+        QT_MOC_LITERAL(263, 12),  // "handleSelect"
+        QT_MOC_LITERAL(276, 6),  // "status"
+        QT_MOC_LITERAL(283, 2),  // "nb"
+        QT_MOC_LITERAL(286, 13)   // "configToolbar"
     },
-    "FenPrincipale\0centralChanged\0\0Centrals\0"
-    "flags\0onListViewClicked\0onDownloadsClicked\0"
-    "onImageClicked\0onMusicClicked\0"
-    "onVideosClicked\0onDocumentClicked\0"
-    "onDesktopClicked\0setDock\0_reculer\0"
-    "_avancer\0onRefreshClicked\0onHomeClicked\0"
-    "onDirChanged\0path\0onHistoryChanged\0"
-    "selecta\0handleSelect\0status\0nb\0"
+    "FenPrincipale",
+    "centralChanged",
+    "",
+    "Centrals",
+    "flags",
+    "onListViewClicked",
+    "onDownloadsClicked",
+    "onImageClicked",
+    "onMusicClicked",
+    "onVideosClicked",
+    "onDocumentClicked",
+    "onDesktopClicked",
+    "setDock",
+    "_reculer",
+    "_avancer",
+    "onRefreshClicked",
+    "onHomeClicked",
+    "onDirChanged",
+    "path",
+    "onHistoryChanged",
+    "selecta",
+    "handleSelect",
+    "status",
+    "nb",
     "configToolbar"
 };
 #undef QT_MOC_LITERAL
+#endif // !QT_MOC_HAS_STRING_DATA
+} // unnamed namespace
 
-static const uint qt_meta_data_FenPrincipale[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSFenPrincipaleENDCLASS[] = {
 
  // content:
-      10,       // revision
+      11,       // revision
        0,       // classname
        0,    0, // classinfo
       19,   14, // methods
@@ -132,6 +217,62 @@ static const uint qt_meta_data_FenPrincipale[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject FenPrincipale::staticMetaObject = { {
+    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
+    qt_meta_stringdata_CLASSFenPrincipaleENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSFenPrincipaleENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSFenPrincipaleENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<FenPrincipale, std::true_type>,
+        // method 'centralChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<Centrals, std::false_type>,
+        // method 'onListViewClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDownloadsClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onImageClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onMusicClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onVideosClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDocumentClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDesktopClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'setDock'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<Centrals, std::false_type>,
+        // method '_reculer'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method '_avancer'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onRefreshClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onHomeClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDirChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'onHistoryChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'selecta'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'handleSelect'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'status'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'configToolbar'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<Centrals, std::false_type>
+    >,
+    nullptr
+} };
+
 void FenPrincipale::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -163,29 +304,13 @@ void FenPrincipale::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (FenPrincipale::*)(Centrals );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&FenPrincipale::centralChanged)) {
+            if (_t _q_method = &FenPrincipale::centralChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
     }
 }
-
-const QMetaObject FenPrincipale::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_FenPrincipale.offsetsAndSize,
-    qt_meta_data_FenPrincipale,
-    qt_static_metacall,
-    nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_FenPrincipale_t
-, QtPrivate::TypeAndForceComplete<FenPrincipale, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<Centrals, std::false_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<Centrals, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<const QString &, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<Centrals, std::false_type>
-
-
->,
-    nullptr
-} };
-
 
 const QMetaObject *FenPrincipale::metaObject() const
 {
@@ -195,7 +320,7 @@ const QMetaObject *FenPrincipale::metaObject() const
 void *FenPrincipale::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_FenPrincipale.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSFenPrincipaleENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QMainWindow::qt_metacast(_clname);
 }
@@ -224,4 +349,3 @@ void FenPrincipale::centralChanged(Centrals _t1)
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

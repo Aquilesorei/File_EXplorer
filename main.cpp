@@ -1,6 +1,6 @@
 #include<QApplication>
 #include "FenPrincipale.h"
-#include "Analysa.h"
+#include "components/Analysa.h"
 
 int main(int argc, char *argv[])
 {

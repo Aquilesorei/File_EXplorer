@@ -3,11 +3,11 @@
 #include <QWidget>
 #include <QVBoxLayout>
 #include <QListWidgetItem>
-#include "Views/leftView.h"
+#include "../Views/leftView.h"
 #include <QTreeWidget>
 #include <QTreeWidgetItem>
 #include <QTimer>
-#include "Views/leftView.h"
+#include "../Views/leftView.h"
 class DeviceList;
 class leftView;
 class leftWidget:public QDockWidget

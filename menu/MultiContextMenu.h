@@ -2,18 +2,18 @@
 #define MULTICONTEXTMENU_H
 #include <QMenu>
 #include <QAction>
-#include "../Achille.h"
-#include "../tabwidget.h"
-#include "../Actions.h"
+#include "../components/CentralWidget.h"
+#include "../components/tabwidget.h"
+#include "../components/Actions.h"
 
 class MultiContextMenu: public QMenu {
     Q_OBJECT
 public:
-    explicit MultiContextMenu(Achille *b);
+    explicit MultiContextMenu(CentralWidget *b);
     ~MultiContextMenu();
     QStringList selectedItems = tabWidget::currentWidget()->currentItemNames();
 private:
-    Achille *bWidget;
+    CentralWidget *bWidget;
     Actions *Act;
     QAction *cut, *copy, *trash, *restore, *deleteAll,*openTerminal,*properties,*compress;
 

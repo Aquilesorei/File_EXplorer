@@ -6,9 +6,9 @@
 #include <QFuture>
 #include <QMetaObject>
 #include "Dialogs/backD.h"
-#include "../tabwidget.h"
+#include "../components/tabwidget.h"
 #include  <QMessageBox>
-BackgroundContextMenu::BackgroundContextMenu(Achille *b) {
+BackgroundContextMenu::BackgroundContextMenu(CentralWidget *b) {
     bWidget = b;
     //l'erreur vient de Actions il y a une erreur de segmentation
     //essai d'implementer les methodes directement ici et verifie si aucune d'elle ne necessite

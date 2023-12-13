@@ -9,7 +9,7 @@
 #include <QProcess>
 #include <QWidget>
 
-#include "../../Achille.h"
+#include "../../components/CentralWidget.h"
 
 class backD : public QDialog
 {
@@ -18,7 +18,7 @@ class backD : public QDialog
 public :
 
 
-    explicit backD(Achille *parent = nullptr);
+    explicit backD(CentralWidget *parent = nullptr);
     QVBoxLayout *layout;
     QVariant store(unsigned long int value);
     qlonglong analysa();

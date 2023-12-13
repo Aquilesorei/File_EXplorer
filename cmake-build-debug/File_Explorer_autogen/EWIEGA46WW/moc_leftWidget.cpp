@@ -1,48 +1,69 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'leftWidget.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.3.1)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../../../leftWidget.h"
 #include <QtGui/qtextcursor.h>
 #include <QScreen>
-#include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #include <QtCore/QList>
+
+#if __has_include(<QtCore/qtmochelpers.h>)
+#include <QtCore/qtmochelpers.h>
+#else
+QT_BEGIN_MOC_NAMESPACE
+#endif
+
+
+#include <memory>
+
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'leftWidget.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.3.1. It"
+#error "This file was generated using the moc from 6.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
-QT_BEGIN_MOC_NAMESPACE
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_leftWidget_t {
-    const uint offsetsAndSize[2];
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
+
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSleftWidgetENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSleftWidgetENDCLASS = QtMocHelpers::stringData(
+    "leftWidget"
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASSleftWidgetENDCLASS_t {
+    uint offsetsAndSizes[2];
     char stringdata0[11];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_leftWidget_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_leftWidget_t qt_meta_stringdata_leftWidget = {
+    uint(sizeof(qt_meta_stringdata_CLASSleftWidgetENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSleftWidgetENDCLASS_t qt_meta_stringdata_CLASSleftWidgetENDCLASS = {
     {
-QT_MOC_LITERAL(0, 10) // "leftWidget"
-
+        QT_MOC_LITERAL(0, 10)   // "leftWidget"
     },
     "leftWidget"
 };
 #undef QT_MOC_LITERAL
+#endif // !QT_MOC_HAS_STRING_DATA
+} // unnamed namespace
 
-static const uint qt_meta_data_leftWidget[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSleftWidgetENDCLASS[] = {
 
  // content:
-      10,       // revision
+      11,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -55,6 +76,19 @@ static const uint qt_meta_data_leftWidget[] = {
        0        // eod
 };
 
+Q_CONSTINIT const QMetaObject leftWidget::staticMetaObject = { {
+    QMetaObject::SuperData::link<QDockWidget::staticMetaObject>(),
+    qt_meta_stringdata_CLASSleftWidgetENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSleftWidgetENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSleftWidgetENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<leftWidget, std::true_type>
+    >,
+    nullptr
+} };
+
 void leftWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     (void)_o;
@@ -62,22 +96,6 @@ void leftWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     (void)_c;
     (void)_a;
 }
-
-const QMetaObject leftWidget::staticMetaObject = { {
-    QMetaObject::SuperData::link<QDockWidget::staticMetaObject>(),
-    qt_meta_stringdata_leftWidget.offsetsAndSize,
-    qt_meta_data_leftWidget,
-    qt_static_metacall,
-    nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_leftWidget_t
-, QtPrivate::TypeAndForceComplete<leftWidget, std::true_type>
-
-
-
->,
-    nullptr
-} };
-
 
 const QMetaObject *leftWidget::metaObject() const
 {
@@ -87,7 +105,7 @@ const QMetaObject *leftWidget::metaObject() const
 void *leftWidget::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_leftWidget.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSleftWidgetENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QDockWidget::qt_metacast(_clname);
 }
@@ -97,35 +115,66 @@ int leftWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = QDockWidget::qt_metacall(_c, _id, _a);
     return _id;
 }
-struct qt_meta_stringdata_DeviceList_t {
-    const uint offsetsAndSize[18];
-    char stringdata0[87];
+namespace {
+
+#ifdef QT_MOC_HAS_STRINGDATA
+struct qt_meta_stringdata_CLASSDeviceListENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSDeviceListENDCLASS = QtMocHelpers::stringData(
+    "DeviceList",
+    "usbr",
+    "",
+    "QList<QStorageInfo>",
+    "us",
+    "loadDrives",
+    "onItemClicked",
+    "QTreeWidgetItem*",
+    "item"
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASSDeviceListENDCLASS_t {
+    uint offsetsAndSizes[18];
+    char stringdata0[11];
+    char stringdata1[5];
+    char stringdata2[1];
+    char stringdata3[20];
+    char stringdata4[3];
+    char stringdata5[11];
+    char stringdata6[14];
+    char stringdata7[17];
+    char stringdata8[5];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_DeviceList_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_DeviceList_t qt_meta_stringdata_DeviceList = {
+    uint(sizeof(qt_meta_stringdata_CLASSDeviceListENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSDeviceListENDCLASS_t qt_meta_stringdata_CLASSDeviceListENDCLASS = {
     {
-QT_MOC_LITERAL(0, 10), // "DeviceList"
-QT_MOC_LITERAL(11, 4), // "usbr"
-QT_MOC_LITERAL(16, 0), // ""
-QT_MOC_LITERAL(17, 19), // "QList<QStorageInfo>"
-QT_MOC_LITERAL(37, 2), // "us"
-QT_MOC_LITERAL(40, 10), // "loadDrives"
-QT_MOC_LITERAL(51, 13), // "onItemClicked"
-QT_MOC_LITERAL(65, 16), // "QTreeWidgetItem*"
-QT_MOC_LITERAL(82, 4) // "item"
-
+        QT_MOC_LITERAL(0, 10),  // "DeviceList"
+        QT_MOC_LITERAL(11, 4),  // "usbr"
+        QT_MOC_LITERAL(16, 0),  // ""
+        QT_MOC_LITERAL(17, 19),  // "QList<QStorageInfo>"
+        QT_MOC_LITERAL(37, 2),  // "us"
+        QT_MOC_LITERAL(40, 10),  // "loadDrives"
+        QT_MOC_LITERAL(51, 13),  // "onItemClicked"
+        QT_MOC_LITERAL(65, 16),  // "QTreeWidgetItem*"
+        QT_MOC_LITERAL(82, 4)   // "item"
     },
-    "DeviceList\0usbr\0\0QList<QStorageInfo>\0"
-    "us\0loadDrives\0onItemClicked\0"
-    "QTreeWidgetItem*\0item"
+    "DeviceList",
+    "usbr",
+    "",
+    "QList<QStorageInfo>",
+    "us",
+    "loadDrives",
+    "onItemClicked",
+    "QTreeWidgetItem*",
+    "item"
 };
 #undef QT_MOC_LITERAL
+#endif // !QT_MOC_HAS_STRING_DATA
+} // unnamed namespace
 
-static const uint qt_meta_data_DeviceList[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSDeviceListENDCLASS[] = {
 
  // content:
-      10,       // revision
+      11,       // revision
        0,       // classname
        0,    0, // classinfo
        3,   14, // methods
@@ -151,6 +200,27 @@ static const uint qt_meta_data_DeviceList[] = {
 
        0        // eod
 };
+
+Q_CONSTINIT const QMetaObject DeviceList::staticMetaObject = { {
+    QMetaObject::SuperData::link<QTreeWidget::staticMetaObject>(),
+    qt_meta_stringdata_CLASSDeviceListENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSDeviceListENDCLASS,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSDeviceListENDCLASS_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<DeviceList, std::true_type>,
+        // method 'usbr'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QList<QStorageInfo>, std::false_type>,
+        // method 'loadDrives'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onItemClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QTreeWidgetItem *, std::false_type>
+    >,
+    nullptr
+} };
 
 void DeviceList::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
@@ -178,29 +248,13 @@ void DeviceList::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (DeviceList::*)(QList<QStorageInfo> );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&DeviceList::usbr)) {
+            if (_t _q_method = &DeviceList::usbr; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
     }
 }
-
-const QMetaObject DeviceList::staticMetaObject = { {
-    QMetaObject::SuperData::link<QTreeWidget::staticMetaObject>(),
-    qt_meta_stringdata_DeviceList.offsetsAndSize,
-    qt_meta_data_DeviceList,
-    qt_static_metacall,
-    nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_DeviceList_t
-, QtPrivate::TypeAndForceComplete<DeviceList, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QList<QStorageInfo>, std::false_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QTreeWidgetItem *, std::false_type>
-
-
->,
-    nullptr
-} };
-
 
 const QMetaObject *DeviceList::metaObject() const
 {
@@ -210,7 +264,7 @@ const QMetaObject *DeviceList::metaObject() const
 void *DeviceList::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_DeviceList.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSDeviceListENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QTreeWidget::qt_metacast(_clname);
 }
@@ -239,4 +293,3 @@ void DeviceList::usbr(QList<QStorageInfo> _t1)
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP
-QT_END_MOC_NAMESPACE

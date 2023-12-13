@@ -7,11 +7,11 @@
 #include <QDebug>
 #include<QApplication>
 #include <QStyleOptionViewItem>
-#include "../Achille.h"
+#include "../components/CentralWidget.h"
 #include <QDesktopServices>
 #include <QItemSelectionModel>
 class FenPrincipale;
-class Achille;
+class CentralWidget;
 class DirView : public QListWidget
 {
 Q_OBJECT
@@ -21,7 +21,7 @@ public :
     QItemSelectionModel *selection;
 
     void mousePressEvent(QMouseEvent *event);
-    Achille *bWidget;
+    CentralWidget *bWidget;
     void keyPressEvent(QKeyEvent *event);
 
 signals:

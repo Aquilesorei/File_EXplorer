@@ -1,13 +1,13 @@
 #ifndef FILECONTEXTMENU_H
 #define FILECONTEXTMENU_H
 #include <QMenu>
-#include "../Achille.h"
-#include "../Actions.h"
+#include "../components/CentralWidget.h"
+#include "../components/Actions.h"
 
 class FileContextMenu : public QMenu {
     Q_OBJECT
 public:
-    explicit FileContextMenu(Achille *parent=nullptr);
+    explicit FileContextMenu(CentralWidget *parent=nullptr);
     void _cut();
     void _copy();
     void _deleteFile();
@@ -17,7 +17,7 @@ public:
 
 
 private:
-    Achille *bWidget;
+    CentralWidget *bWidget;
     QAction *cut, *copy,*rename, *trash, *restore, *deleteFile,*open,*paste,*properties;
     QAction *compress,*uncompress,*openWith;
     void _open();

@@ -1,4 +1,4 @@
-#include "Achille.h"
+#include "CentralWidget.h"
 #include <QDir>
 #include <QVector>
 #include <QIcon>
@@ -12,13 +12,13 @@
 
 #include "tabwidget.h"
 
-Achille::Achille()
+CentralWidget::CentralWidget()
 {
           setMouseTracking(true);
     searcha = new SearchBar(this);
     searcha->hide();
-    connect(searcha->entry,&QLineEdit::returnPressed,this,&Achille::onEnterPressed);
-    connect(searcha->close,&QPushButton::clicked,this,&Achille::onCloseClicked);
+    connect(searcha->entry,&QLineEdit::returnPressed,this,&CentralWidget::onEnterPressed);
+    connect(searcha->close,&QPushButton::clicked,this,&CentralWidget::onCloseClicked);
     view = new DirView(this);
     view->setIconSize(QSize(64,64));
     view->setSortingEnabled(true);
@@ -77,14 +77,14 @@ Achille::Achille()
 }
 
 
-Achille::~Achille()
+CentralWidget::~CentralWidget()
 {
     delete view;
 
     delete layout;
 
 }
-void Achille::onEnterPressed() {
+void CentralWidget::onEnterPressed() {
     qDebug()<<"ok";
     this->reload();
     this->searchPatterns.clear();
@@ -129,13 +129,13 @@ void Achille::onEnterPressed() {
 
 }
 
-void Achille::onCloseClicked() {
+void CentralWidget::onCloseClicked() {
     this->searchPatterns.clear();
     this->reload();
     searcha->hide();
 }
 
-void Achille::setIconView() const {
+void CentralWidget::setIconView() const {
     view->setViewMode(QListWidget::IconMode);
     view->setFlow(QListWidget::LeftToRight);
     view->setWrapping(true);
@@ -145,7 +145,7 @@ void Achille::setIconView() const {
     view->setWordWrap(true);
 }
 
-void Achille::setListView() {
+void CentralWidget::setListView() {
     view->setViewMode(QListView::ListMode);
     view->setFlow(QListWidget::TopToBottom);
     view->setWrapping(true);
@@ -155,7 +155,7 @@ void Achille::setListView() {
     view->setWordWrap(true);
 }
 
-void Achille::loadDir(const QString& path, bool recordHistory, bool firstLoad) {
+void CentralWidget::loadDir(const QString& path, bool recordHistory, bool firstLoad) {
     //recordHistory = true;//modiff
     if (recordHistory) {
         //emit dirChanged(path);
@@ -325,23 +325,23 @@ void Achille::loadDir(const QString& path, bool recordHistory, bool firstLoad) {
 
 }
 
-void Achille::loadDir(const QString& path, bool recordHistory) {
+void CentralWidget::loadDir(const QString& path, bool recordHistory) {
     loadDir(path,recordHistory,false);
 }
 
-void Achille::loadDir(const QString& path) {
+void CentralWidget::loadDir(const QString& path) {
     loadDir(path,true);
 }
 
-void Achille::loadDir() {
+void CentralWidget::loadDir() {
     loadDir(QDir::homePath());
 }
 
-QStringList Achille::history() {
+QStringList CentralWidget::history() {
     return historyList;
 }
 
-void Achille::reload() {
+void CentralWidget::reload() {
     //Get all currently selected items so we can re-select them
     QList<QListWidgetItem *> items = view->selectedItems();
     QStringList oldNames;
@@ -404,7 +404,7 @@ void Achille::reload() {
     }
 }
 
-QString Achille::fsCurrentPath() const {
+QString CentralWidget::fsCurrentPath() const {
     QString path = currentPath;
     if (!path.endsWith("/")) {
         path+="/";
@@ -412,7 +412,7 @@ QString Achille::fsCurrentPath() const {
     return path;
 }
 
-QString Achille::currentDirName() const {
+QString CentralWidget::currentDirName() const {
     QDir dir(currentPath);
     QString name = dir.dirName();
     if (name=="") {
@@ -421,20 +421,20 @@ QString Achille::currentDirName() const {
     return name;
 }
 
-void Achille::startRefresh() {
+void CentralWidget::startRefresh() {
     thread = new FileSystemWatcher(this);
     thread->start(1000);
 }
 
-void Achille::stopRefresh() {
+void CentralWidget::stopRefresh() {
     thread->stop();
 }
 
-QString Achille::currentItemName() {
+QString CentralWidget::currentItemName() {
     return currentItemTxt;
 }
 
-QStringList Achille::currentItemNames() {
+QStringList CentralWidget::currentItemNames() {
     QStringList list;
     auto selectedItems =view->selectedItems();
     for (int i = 0; i < selectedItems.size(); i++) {
@@ -444,13 +444,13 @@ QStringList Achille::currentItemNames() {
     return list;
 }
 
-void Achille::selectAll() {
+void CentralWidget::selectAll() {
     view->selectAll();
     AllSelected = true;
     emit selectAllstatus(AllSelected);
 }
 
-void Achille::onItemDoubleClicked(QListWidgetItem *item) {
+void CentralWidget::onItemDoubleClicked(QListWidgetItem *item) {
     //tabWidget *tb = new tabWidget;
     //int blo = tb->tabs->currentIndex();
 
@@ -478,11 +478,11 @@ void Achille::onItemDoubleClicked(QListWidgetItem *item) {
     }
 }
 
-void Achille::onItemClicked(QListWidgetItem *item) {
+void CentralWidget::onItemClicked(QListWidgetItem *item) {
     currentItemTxt = item->text();
     emit selectionState(true);
 }
-/*bool Achille::eventFilter(QObject *obj,QEvent *event)
+/*bool CentralWidget::eventFilter(QObject *obj,QEvent *event)
 {
     if(event->type()==QEvent::MouseButtonPress)
     {
@@ -544,9 +544,9 @@ void Achille::onItemClicked(QListWidgetItem *item) {
 
 //FileSystemWatcher class
 //This is class is an extended QTimer.
-//Its purpose is to refresh the Achille every second so that files/folders created outside
+//Its purpose is to refresh the CentralWidget every second so that files/folders created outside
 //the program are included in our view.
-FileSystemWatcher::FileSystemWatcher(Achille *widget) {
+FileSystemWatcher::FileSystemWatcher(CentralWidget *widget) {
     bWidget = widget;
     connect(this,&QTimer::timeout,this,&FileSystemWatcher::onRefresh);
 }
@@ -556,7 +556,7 @@ void FileSystemWatcher::onRefresh() {
 }
 
 
-bool Achille::veriff(const QList<QString>& liste,const QString& item)
+bool CentralWidget::veriff(const QList<QString>& liste, const QString& item)
 {
     bool  success {false};
     for(auto & i : liste)
@@ -585,7 +585,7 @@ bool Achille::veriff(const QList<QString>& liste,const QString& item)
       // else
        // {
             /*QString pathg = mo->filePath(this->currentIndex())+"/";
-            Achille *A= new Achille;
+            CentralWidget *A= new CentralWidget;
             A->model->setRootPath(pathg);
             A->view->setRootIndex(A->model->index(pathg));
             //A->model->ref
