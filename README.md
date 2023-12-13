@@ -18,7 +18,7 @@ This project demonstrates a basic file explorer application that utilizes the Qt
 
 ### Installation:
 
-1. Clone this repository: `git clone https://github.com/your-username/File_EXplorer.git`
+1. Clone this repository: `git clone https://github.com/Aquilesorei/File_EXplorer.git`
 2. Build the project using your preferred build system (e.g., qmake & make)
 3. Run the executable file
 
