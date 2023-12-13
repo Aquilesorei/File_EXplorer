@@ -21,7 +21,7 @@ find_package(Qt6 COMPONENTS
         REQUIRED)
         
         
-   add_executable(File_Explorer main.cpp components/CentralWidget.cpp components/CentralWidget.h components/Actions.cpp components/Actions.h components/Analysa.cpp components/Analysa.h components/Archiva.cpp components/Archiva.h FenPrincipale.cpp  FenPrincipale.h FileTransfertHome.cpp   FileTransfertHome.h components/Welcome.cpp components/Welcome.h components/leftWidget.cpp
+   add_executable(File_Explorer main.cpp components/CentralWidget.cpp components/CentralWidget.h components/Actions.cpp components/Actions.h components/Analysa.cpp components/Analysa.h components/Archiva.cpp components/Archiva.h MainWindow.cpp MainWindow.h FileTransfertHome.cpp   FileTransfertHome.h components/Welcome.cpp components/Welcome.h components/leftWidget.cpp
            components/leftWidget.h components/searchbar.cpp components/searchbar.h
            components/tabwidget.cpp components/tabwidget.h
            ${CMAKE_CURRENT_SOURCE_DIR}/Views/DirView.cpp
