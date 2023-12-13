@@ -51,13 +51,13 @@ Q_DECLARE_OPERATORS_FOR_FLAGS(Centrals);
 class toolbarfichier;
 QT_END_NAMESPACE
 
-class FenPrincipale : public QMainWindow
+class MainWindow : public QMainWindow
 {
 
    Q_OBJECT
 
 public:
-    FenPrincipale();
+    MainWindow();
 
     CentralWidget *A;
     Welcome *w;

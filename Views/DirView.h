@@ -10,7 +10,7 @@
 #include "../components/CentralWidget.h"
 #include <QDesktopServices>
 #include <QItemSelectionModel>
-class FenPrincipale;
+class MainWindow;
 class CentralWidget;
 class DirView : public QListWidget
 {

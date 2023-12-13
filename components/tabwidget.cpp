@@ -97,8 +97,8 @@ QVector<CentralWidget *> tabWidget::allWidgets() {
 
 void tabWidget::onTabsChanged() {
     //navigationBar->setBrowserWidget(currentWidget());
-   // FenPrincipale::addrTxt->setBrowserWidget(currentWidget());
-    //FenPrincipale::addrButtons->setBrowserWidget(currentWidget());
+   // MainWindow::addrTxt->setBrowserWidget(currentWidget());
+    //MainWindow::addrButtons->setBrowserWidget(currentWidget());
 }
 
 void tabWidget::onTabClosed(int index) {

@@ -1,11 +1,11 @@
-#include "FenPrincipale.h"
+#include "MainWindow.h"
 #include<QApplication>
 #include <string>
 #include <QDir>
 #include <QIcon>
 #include <QPixmap>
 
-FenPrincipale::FenPrincipale():window(new QMainWindow)
+MainWindow::MainWindow(): window(new QMainWindow)
 {
 
    index = 0;
@@ -115,7 +115,7 @@ FenPrincipale::FenPrincipale():window(new QMainWindow)
     ActionRefresh->setToolTip("Refresh");
     ActionSetting->setIcon(QIcon(QDir::currentPath() +"/Icons/setting.png"));
 
-    //connect(ActionCopy, &QAction::triggered, this, &FenPrincipale::FindReplace);
+    //connect(ActionCopy, &QAction::triggered, this, &MainWindow::FindReplace);
     //buton = new QToolButton;
     //buton->setIcon(QIcon(":/Icons/Find.svg"));
    /* toolbarFichiers->addWidget(MenuNew);
@@ -126,9 +126,9 @@ FenPrincipale::FenPrincipale():window(new QMainWindow)
 
   /* toolbarFichiers->setIconSize(QSize(20,20));
    navig->setIconSize(QSize(20,20));*/
-   /* connect(ActionCopy, &QAction::triggered, this,&FenPrincipale::_copy);
-    connect(ActionCut, &QAction::triggered, this,&FenPrincipale::_cut);
-   connect(ActionPaste, &QAction::triggered, this,&FenPrincipale::_paste);*/
+   /* connect(ActionCopy, &QAction::triggered, this,&MainWindow::_copy);
+    connect(ActionCut, &QAction::triggered, this,&MainWindow::_cut);
+   connect(ActionPaste, &QAction::triggered, this,&MainWindow::_paste);*/
 
 
 
@@ -224,10 +224,10 @@ FenPrincipale::FenPrincipale():window(new QMainWindow)
     avancer->setEnabled(false);
     reculer->setEnabled(false);
 
-    connect(reculer,&QToolButton::clicked,this,&FenPrincipale::_reculer);
-    connect(avancer,&QToolButton::clicked,this,&FenPrincipale::_avancer);
-    connect(refresh,&QToolButton::clicked,this,&FenPrincipale::onRefreshClicked);
-    connect(home,&QToolButton::clicked,this,&FenPrincipale::onHomeClicked);
+    connect(reculer,&QToolButton::clicked,this,&MainWindow::_reculer);
+    connect(avancer,&QToolButton::clicked,this,&MainWindow::_avancer);
+    connect(refresh,&QToolButton::clicked,this,&MainWindow::onRefreshClicked);
+    connect(home,&QToolButton::clicked,this,&MainWindow::onHomeClicked);
 
 
     navig->addWidget(reculer);
@@ -241,13 +241,13 @@ FenPrincipale::FenPrincipale():window(new QMainWindow)
    connecto();
     //QObject::connect(vue,SIGNAL(clicked()),this,SLOT(on_listView_clicked()));
 
-      connect(toolbarFichiers->ActionAll, &QAction::triggered, this,&FenPrincipale::selecta);
-      connect(A, &CentralWidget::selectAllstatus, this, &FenPrincipale::handleSelect);
-      connect(this, &FenPrincipale::centralChanged, this,&FenPrincipale::setDock);
-      connect(this, &FenPrincipale::centralChanged, this,&FenPrincipale::configToolbar);
+      connect(toolbarFichiers->ActionAll, &QAction::triggered, this,&MainWindow::selecta);
+      connect(A, &CentralWidget::selectAllstatus, this, &MainWindow::handleSelect);
+      connect(this, &MainWindow::centralChanged, this, &MainWindow::setDock);
+      connect(this, &MainWindow::centralChanged, this, &MainWindow::configToolbar);
       configToolbar(central::welcome);
 }
-void FenPrincipale::onListViewClicked()
+void MainWindow::onListViewClicked()
 
 {
     if(centralWidget()== w){
@@ -263,7 +263,7 @@ void FenPrincipale::onListViewClicked()
 
 }
 
-void FenPrincipale::onDownloadsClicked()
+void MainWindow::onDownloadsClicked()
 { if(centralWidget()== w)
  {
          connect(home,SIGNAL(clicked()),this,SLOT(onHomeClicked()));
@@ -286,7 +286,7 @@ void FenPrincipale::onDownloadsClicked()
 
 }
 }
-void FenPrincipale::onImageClicked()
+void MainWindow::onImageClicked()
 {
       tab = new tabWidget;
 
@@ -295,7 +295,7 @@ void FenPrincipale::onImageClicked()
       emit centralChanged(central::tab);
 
 }
-void FenPrincipale::onMusicClicked()
+void MainWindow::onMusicClicked()
 {
     tab = new tabWidget;
 
@@ -304,7 +304,7 @@ void FenPrincipale::onMusicClicked()
     emit centralChanged(central::tab);
 
 }
-void FenPrincipale::onVideosClicked()
+void MainWindow::onVideosClicked()
 {
     tab = new tabWidget;
 
@@ -313,7 +313,7 @@ void FenPrincipale::onVideosClicked()
     emit centralChanged(central::tab);
 
 }
-void FenPrincipale::onDocumentClicked()
+void MainWindow::onDocumentClicked()
 {
     tab = new tabWidget;
 
@@ -321,7 +321,7 @@ void FenPrincipale::onDocumentClicked()
     this->setCentralWidget(tab);
     emit centralChanged(central::tab);
 }
-void FenPrincipale::onDesktopClicked()
+void MainWindow::onDesktopClicked()
 {
     tab = new tabWidget;
 
@@ -330,7 +330,7 @@ void FenPrincipale::onDesktopClicked()
     emit centralChanged(central::tab);
 }
 
-void FenPrincipale::setDock(Centrals flags)
+void MainWindow::setDock(Centrals flags)
 {
 
    if(flags==0x0000)
@@ -347,7 +347,7 @@ void FenPrincipale::setDock(Centrals flags)
    }
 }
 
-void FenPrincipale::status(int nb)
+void MainWindow::status(int nb)
 {
 
 
@@ -451,7 +451,7 @@ void FenPrincipale::status(int nb)
     }
 }
 
-void FenPrincipale::configToolbar(Centrals flags)
+void MainWindow::configToolbar(Centrals flags)
 {
     if(flags==0x0001)
     {
@@ -473,7 +473,7 @@ void FenPrincipale::configToolbar(Centrals flags)
     delete home;
 }*/
 
-void FenPrincipale::setNavBar() {
+void MainWindow::setNavBar() {
 
     if (tabWidget::currentWidget()->fsCurrentPath()=="/") {
         reculer->setEnabled(false);
@@ -485,11 +485,11 @@ void FenPrincipale::setNavBar() {
     } else {
         avancer->setEnabled(true);
     }
-    connect(A, &CentralWidget::dirChanged, this, &FenPrincipale::onDirChanged);
-    connect(A, &CentralWidget::historyChanged, this, &FenPrincipale::onHistoryChanged);
+    connect(A, &CentralWidget::dirChanged, this, &MainWindow::onDirChanged);
+    connect(A, &CentralWidget::historyChanged, this, &MainWindow::onHistoryChanged);
 }
 
-void FenPrincipale::connecto()
+void MainWindow::connecto()
 {
     connect(home,SIGNAL(clicked()),this,SLOT(onHomeClicked()));
     connect(w->BoutonMAinStorage,SIGNAL(clicked()),this,SLOT(onListViewClicked()));
@@ -502,7 +502,7 @@ void FenPrincipale::connecto()
 
 }
 
-void FenPrincipale::_reculer() {
+void MainWindow::_reculer() {
     if (tabWidget::currentWidget()==nullptr) {
         return;
     }
@@ -513,18 +513,18 @@ void FenPrincipale::_reculer() {
     tabWidget::currentWidget()->loadDir(newPath);
 }
 
-void FenPrincipale:: _avancer(){
+void MainWindow:: _avancer(){
 
     QString path = tabWidget::currentWidget()->history().at(index);
     tabWidget::currentWidget()->loadDir(path);
     ++index;
 }
 
-void FenPrincipale::onRefreshClicked() {
+void MainWindow::onRefreshClicked() {
     tabWidget::currentWidget()->reload();
 }
 
-void FenPrincipale::onHomeClicked() {
+void MainWindow::onHomeClicked() {
 
     if(centralWidget() == tab)
         {
@@ -548,7 +548,7 @@ void FenPrincipale::onHomeClicked() {
 
 }
 }
-void FenPrincipale::onDirChanged(const QString& path) {
+void MainWindow::onDirChanged(const QString& path) {
        qDebug()<<"Directory changed";
     if (path=="/") {
         reculer->setEnabled(false);
@@ -557,7 +557,7 @@ void FenPrincipale::onDirChanged(const QString& path) {
     }
 }
 
-void FenPrincipale::onHistoryChanged() {
+void MainWindow::onHistoryChanged() {
      qDebug()<<"history changed";
     if (tabWidget::currentWidget()->history().isEmpty()) {
         avancer->setEnabled(false);
@@ -566,7 +566,7 @@ void FenPrincipale::onHistoryChanged() {
     }
 }
 
-void FenPrincipale::selecta()
+void MainWindow::selecta()
 {
 
   if(tabWidget::currentWidget()->AllSelected)
@@ -580,7 +580,7 @@ void FenPrincipale::selecta()
       // toolbarFichiers->ActionAll->setStatusTip("All items selected");
   }
 }
-void FenPrincipale::handleSelect()
+void MainWindow::handleSelect()
 {
 
     QStringList selectedItems = tabWidget::currentWidget()->currentItemNames();//plusieurs
@@ -590,7 +590,7 @@ void FenPrincipale::handleSelect()
       toolbarFichiers->ActionAll->setEnabled(false);
 }
 
-/*void FenPrincipale::_cut()
+/*void MainWindow::_cut()
 {
     board->clear();
 
@@ -624,13 +624,13 @@ void FenPrincipale::handleSelect()
   //move = true;
 }
 
-void FenPrincipale::_paste()
+void MainWindow::_paste()
 {
    //BackgroundContextMenu *ba = new BackgroundContextMenu(A);
   // ba->onpaste();
 }
 
-void FenPrincipale::_copy()
+void MainWindow::_copy()
 {
     QStringList selectedItems = tabWidget::currentWidget()->currentItemNames();
 

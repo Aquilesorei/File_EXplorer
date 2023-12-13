@@ -1,12 +1,12 @@
 #include<QApplication>
-#include "FenPrincipale.h"
+#include "MainWindow.h"
 #include "components/Analysa.h"
 
 int main(int argc, char *argv[])
 {
  QApplication app(argc, argv);
 
-FenPrincipale fenetre;
+MainWindow fenetre;
  fenetre.showMaximized();
  fenetre.show();
 

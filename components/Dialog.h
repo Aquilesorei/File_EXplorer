@@ -10,7 +10,7 @@
 #include<QMainWindow>
 #include<QDesktopServices>
 #include "CentralWidget.h"
-#include "../FenPrincipale.h"
+#include "../MainWindow.h"
 #include "tabwidget.h"
 class Dialog : public QDialog
 {
