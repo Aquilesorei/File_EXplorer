@@ -1,4 +1,4 @@
-# File_EXplorer#
+# File_EXplorer
 
 **A simple file explorer application built with C++ and Qt Widgets.**
 
