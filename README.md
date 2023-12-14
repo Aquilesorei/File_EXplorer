@@ -34,3 +34,6 @@ This project demonstrates a basic file explorer application that utilizes the Qt
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+## Author
+
+👤 **Aquiles O Rei**
